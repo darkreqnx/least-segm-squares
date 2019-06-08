@@ -1,0 +1,81 @@
+\hypertarget{sls_8cpp}{}\section{C\+:/\+Users/\+Nikhil Nair/\+Documents/\+College/\+Courses/\+D\+A\+A/assignment\+\_\+submissions/2016\+A7\+P\+S0006\+H\+\_\+2016\+A7\+P\+S0049\+H\+\_\+csf364\+\_\+a2/\+D\+A\+A-\/2\+\_\+final/\+D\+A\+A-\/2/sls.cpp File Reference}
+\label{sls_8cpp}\index{C:/Users/Nikhil Nair/Documents/College/Courses/DAA/assignment\_submissions/2016A7PS0006H\_2016A7PS0049H\_csf364\_a2/DAA-\/2\_final/DAA-\/2/sls.cpp@{C:/Users/Nikhil Nair/Documents/College/Courses/DAA/assignment\_submissions/2016A7PS0006H\_2016A7PS0049H\_csf364\_a2/DAA-\/2\_final/DAA-\/2/sls.cpp}}
+{\ttfamily \#include \char`\"{}sls.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sls_8cpp_ad1f79d9d99776d7353c6659c307c83c6}\label{sls_8cpp_ad1f79d9d99776d7353c6659c307c83c6}} 
+\#define {\bfseries M\+A\+XN}~1000
+\item 
+\mbox{\Hypertarget{sls_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{sls_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}} 
+\#define {\bfseries I\+NF}~numeric\+\_\+limits$<$double$>$\+::infinity()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{sls_8cpp_a1ceb4e093158d78a522b114618e18c50}{compareX}} (\mbox{\hyperlink{struct_point}{Point}} a, \mbox{\hyperlink{struct_point}{Point}} b)
+\begin{DoxyCompactList}\small\item\em A simple function that compares two points wrt their x-\/coordinate values. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{struct_line}{Line}} $>$ \mbox{\hyperlink{sls_8cpp_a8fc072a5b10cd6943c1e0c2604bb29c2}{least\+Segm\+Squares}} (double cost)
+\begin{DoxyCompactList}\small\item\em Main function that precomputes the error table and finds the optimum cost and number of segments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sls_8cpp_a2f0658890829af32624fe45cea0e8a0b}{save\+Tokenize}} (string str\+\_\+line)
+\begin{DoxyCompactList}\small\item\em Utility function for tokenising and storing cost and points when reading from a txt, not required otherwise when using the G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class containing all functions required for the Segmented Least Squares Algorithm 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sls_8cpp_a1ceb4e093158d78a522b114618e18c50}\label{sls_8cpp_a1ceb4e093158d78a522b114618e18c50}} 
+\index{sls.cpp@{sls.cpp}!compareX@{compareX}}
+\index{compareX@{compareX}!sls.cpp@{sls.cpp}}
+\subsubsection{\texorpdfstring{compareX()}{compareX()}}
+{\footnotesize\ttfamily bool compareX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_point}{Point}}}]{a,  }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{b }\end{DoxyParamCaption})}
+
+
+
+A simple function that compares two points wrt their x-\/coordinate values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & is a \mbox{\hyperlink{struct_point}{Point}} \\
+\hline
+{\em b} & is a \mbox{\hyperlink{struct_point}{Point}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, 1 if $<$, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sls_8cpp_a8fc072a5b10cd6943c1e0c2604bb29c2}\label{sls_8cpp_a8fc072a5b10cd6943c1e0c2604bb29c2}} 
+\index{sls.cpp@{sls.cpp}!leastSegmSquares@{leastSegmSquares}}
+\index{leastSegmSquares@{leastSegmSquares}!sls.cpp@{sls.cpp}}
+\subsubsection{\texorpdfstring{leastSegmSquares()}{leastSegmSquares()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_line}{Line}}$>$ least\+Segm\+Squares (\begin{DoxyParamCaption}\item[{double}]{cost }\end{DoxyParamCaption})}
+
+
+
+Main function that precomputes the error table and finds the optimum cost and number of segments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & is a double, denotes the cost of creating a new line segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Line$>$ containing all the segments denoted by their starting and ending points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sls_8cpp_a2f0658890829af32624fe45cea0e8a0b}\label{sls_8cpp_a2f0658890829af32624fe45cea0e8a0b}} 
+\index{sls.cpp@{sls.cpp}!saveTokenize@{saveTokenize}}
+\index{saveTokenize@{saveTokenize}!sls.cpp@{sls.cpp}}
+\subsubsection{\texorpdfstring{saveTokenize()}{saveTokenize()}}
+{\footnotesize\ttfamily void save\+Tokenize (\begin{DoxyParamCaption}\item[{string}]{str\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+Utility function for tokenising and storing cost and points when reading from a txt, not required otherwise when using the G\+UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+\_\+line} & is a string \\
+\hline
+\end{DoxyParams}
